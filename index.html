@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+    <section class="navbar" id="navbar">
+        <div class="logo">Portofolio</div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#achievement">Achievement</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </section>
+    <div class="showcase" id="home">
+        <div class="showcase-txt">
+            <h1><span>Hello Everyone</span> Welcome to My Portofolio</h1>
+            <h2>I'm a student who have a dream to be a Web Progammer. </h2>
+            <p>Hope you enjoy :)</p>
+            <a href="#about" id="btn-showcase" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Button Scroll To Top -->
+
+    <a href="#navbar" class="btn-scroll-top">
+        <img src="/Assets/IMG/arrow.png" alt="">
+    </a>
+
+    <!-- About Page -->
+
+    <div id="about" class="about">
+        <div class="about-txt">
+            <h1>About Me</h1>
+            <p>Hello Friends, My name is Armand. I'm from East Jakarta. I'm a student. I currently study at IDN Boarding
+                School in West java. I was born in Jakarta, 1st October 2006. I live with my 2 brother, my sister, my
+                parent and my grandpa. </p>
+            <p>The way to be a good Progammer is hard. I must learn a lot of things Otodidactly. But, i won't be gived
+                up. </p>
+            <p>Tap on a bottom below to see more about me </p>
+            <a href="/about" class="btn">About Me</a>
+        </div>
+        <div class="about-img"></div>
+    </div>
+    <div class="img"></div>
+
+    <!-- Achievement Page -->
+
+    <div class="achievement" id="achievement">
+        <div class="title" id="t-achievement">Achievement</div>
+        <p>To be a professional Progammer, i must be participate in a lot of progammer event. So i make a first step to
+            do it. In here you can see my first Certificate.</p>
+        <div class="achievement-list">
+            <div class="list">
+                <h1>Semifinalist in IDN ITFEST 2021</h1>
+                <p>I follow this event when i'm in IDN at 10 grade. I follow it with my friends, Althaf and Nanda. we're
+                    having fun in this event. But unfortunetly we're just get a semifinalist test. That's Great enough
+                    for me. Thank's Friend</p>
+                <img src="/Assets/IMG/cert-1.jpg" id="cert">
+            </div>
+            <div class="list">
+                <h1>SoloLearn HTML Course Certificate</h1>
+                <p>Okay, maybe for you're all this certificate is like worthless. But for me,this certificate had many
+                    memories to get it. cuz' this is my first certificate in progamming subject.</p>
+                <img src="/Assets/IMG/cert-2.jpg" id="cert">
+            </div>
+            <div class="list">
+                <h1>Sololearn CSS Course Certificate</h1>
+                <p>Same as HTML Course this is the second certificate progamming that i get after i finish a HTML course
+                </p>
+                <img src="/Assets/IMG/cert-3.jpg" id="cert">
+            </div>
+        </div>
+        <a href="/certificate" id="btn-ac" class="btn">See More</a>
+    </div>
+    <div class="project" id="project">
+        <div class="title" id="t-project">Project</div>
+        <div class="project-list">
+            
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".list"), {
+            max: 10,
+            speed: 200,
+            glare: true,
+            "max-glare": 0.5
+        });
+        let titleAchievement = document.getElementById('t-achievement')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY
+
+            titleAchievement.style.left = -2000 + value * 1 + 'px';
+
+        })
+    </script>
+</body>
+
+</html>
